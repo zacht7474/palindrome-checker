@@ -1,91 +1,28 @@
-body {
-  background-color: black;
-  color: white; /* Optional: makes text easier to read on black */
-  font-family: Arial, sans-serif;
-  font-weight: 100; /* Thin text */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Page Title</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Palindrome Checker</h1>
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* vertical center */
-  align-items: center;      /* horizontal center */
   
-  height: 100vh;            /* full viewport height */
-  margin: 0;                /* remove default margin */
+
+  <input id="text-input"/>
+  <button id="check-btn">
+    Check
+  </button>
+  <p id="result">
+  </p>
+  <p id="info">
+    💡Fun fact - A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+  </p>
   
-}
-
-#text-input {
-  margin-bottom: 15px; /* adds 15px space below input */
-}
-
-h1 {
-
-  align-items: center;
-
-}
-
-
-
-
-
-
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: 300;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 20px; /* small padding so content doesn’t touch edges on small screens */
-}
-
-#text-input {
-  margin-bottom: 15px;
-  max-width: 300px; /* limits width on large screens */
-  box-sizing: border-box;
-}
-
-h1, #result {
-  text-align: center;
-}
-
-h1 {
-  font-size: 2rem; /* smaller than the default, adjust as you like */
-  text-align: center; /* keeps the centered text you wanted */
-}
-
-#text-input {
-  text-align: center;
-}
-
-#info {
-  text-align: center;
-}
-
-
-
-#info {
-  max-width: 500px;     /* or whatever width fits nicely */
-  margin: 0 auto;       /* centers the block horizontally */
-  text-align: center;
-}
-
-
-
-
-
-
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
